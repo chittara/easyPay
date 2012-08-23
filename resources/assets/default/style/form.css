@@ -1,0 +1,441 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+#form-content {
+background:#FFFFFF;
+}
+
+
+		/*
+		-----------------------------------------------------------------
+		form
+		----------------------------------------------------------------- */
+
+		form.dm_form {
+			width: 100%;
+			font-family: sans-serif; font-size: 0.8em;
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+		form.dm_form div.form_wrapper {
+			margin: 0 -1%;
+			padding: 0;
+		}
+		form.dm_form fieldset {
+			clear: both;
+			margin: 0 0 20px 0;
+			padding: 0;
+			border: 0;
+		}
+
+
+		/*
+		---------------------------
+		labels and wrappers
+		--------------------------- */
+
+		form.dm_form label {
+			margin: 0 1%;
+			padding: 0;
+			border: 0;
+			float: left;
+			display: table;
+			width: 1%;
+		}
+		form.dm_form span.wrapper {
+			margin: 0;
+			padding: 0;
+			display: table-cell;
+			width: 1%; /* firefox */
+		}
+
+
+		/*
+		---------------------------
+		width
+		--------------------------- */
+
+		form.dm_form label.w100 {
+			width: 98%;
+			display: block;
+		}
+		form.dm_form label.w75 {
+			width: 73%;
+			display: block;
+		}
+		form.dm_form label.w50 {
+			width: 10%;
+			display: block;
+		}
+		form.dm_form label.w25 {
+			width: 23%;
+			display: block;
+		}
+
+
+		/*
+		---------------------------
+		position
+		--------------------------- */
+
+		form.dm_form label.p25 {
+			margin-left: 26%;
+		}
+		form.dm_form label.p50 {
+			margin-left: 51%;
+		}
+		form.dm_form label.p75 {
+			margin-left: 76%;
+		}
+
+
+		/*
+		---------------------------
+		errors
+		--------------------------- */
+
+		form.dm_form label.error input.field,
+		form.dm_form label.error select.field,
+		form.dm_form label.error textarea.field {
+			border-color: #dd1100;
+		}
+
+		form.dm_form label.error span.title {
+			color: #dd1100;
+		}
+
+
+		/*
+		---------------------------
+		title and examples 
+		--------------------------- */
+
+		form.dm_form label span.title {
+		}
+		form.dm_form label span.example {
+			color: #999;
+			font-style: italic;	
+		}
+
+
+		/*
+		---------------------------
+		input/select fields 
+		--------------------------- */
+
+		form.dm_form label input.field,
+		form.dm_form label select.field,
+		form.dm_form label textarea.field {
+			width: 100%;
+			display: block;
+			border: 1px solid #d0d6da;
+			border-left: 3px solid #809db5;
+			background: #e9edf0;
+			padding: 4px;
+			font-family: sans-serif; font-size: 1em;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box; /* gecko */
+			-webkit-box-sizing: border-box; /* khtml/webkit */
+			-ms-box-sizing: border-box; /* IE */
+		}
+
+		form.dm_form label select.field {
+			padding: 4px 1px 1px 1px; /* have to try out */
+		}
+
+		form.dm_form label input.field:focus,
+		form.dm_form label select.field:focus,
+		form.dm_form label textarea.field:focus {
+			border: 1px solid #d0d6da;
+			border-left: 3px solid #57ab44;
+			background: #e0eadd;
+		}
+
+		/* Pflichtfelder
+			mandatory fields */
+		form.dm_form label.mandatory input.field,
+		form.dm_form label.mandatory select.field,
+		form.dm_form label.mandatory textarea.field {
+			border: 1px solid #809db5;
+			border-left: 8px solid #809db5;
+		}
+
+		/* Kalenderfelder
+			calendar fields */
+		form.dm_form label.calendar input.field {
+			padding-right: 25px;
+		}
+
+
+		/*
+		---------------------------
+		checkboxes and radios
+		--------------------------- */
+
+		form.dm_form input.select {
+			display: block;
+			float: left;
+			margin: 0;
+		}
+
+
+		/*
+		---------------------------
+		submit button
+		--------------------------- */
+
+		form.dm_form input.submit {
+			width: 100%;
+			background: #809db5;
+			color: #fff;
+			padding: 2px 0;
+			font-size: 1em;
+		}
+
+		form.dm_form input.submit:hover,
+		form.dm_form input.submit:focus {
+			background: #57ab44;
+			/* cursor: pointer;  sorry, can't use that one in front of Opera */
+		}
+
+
+		/*
+		---------------------------
+		calender icon
+		--------------------------- */
+		
+		form.dm_form a.calendar {
+			float: right;
+			position: relative; top: 3px; left: -20px;
+			z-index: 1000;
+		}
+		form.dm_form a.calendar img {
+			border: 0;
+			position: absolute; top: 0; left: 0;
+			z-index: 1001;
+		}
+
+		
+		/*
+		---------------------------
+		additional styles for
+		input/select fields
+		--------------------------- */
+
+		form.dm_form label.inputselect span.title {
+			margin: 0 0 2px 0;
+			display: table; /* act as inline-block */
+		}
+
+		form.dm_form label span.title:hover,
+		form.dm_form label span.title:focus {
+			color: #57ab44;
+			cursor: pointer;
+		}
+
+		form.dm_form label br {
+			margin: 0 0 2px 0;
+		}
+
+
+		/*
+		---------------------------
+		additional styles for
+		checkboxes and radios
+		--------------------------- */
+
+		form.dm_form label.wauto {
+			width: auto;
+			margin-right: 15px;
+		}
+		form.dm_form label.radiocheck {
+			margin-bottom: 10px;
+		}
+		form.dm_form label.radiocheck span.wrapper {
+			padding-right: 0;
+		}
+		form.dm_form label.wauto span.wrapper {
+			display: inline;
+		}
+		form.dm_form label.radiocheck span.title {
+			display: block;
+			margin: 0 0 0 20px;
+			padding: 0;
+		}
+
+
+		/*
+		---------------------------
+		clearing elements
+		--------------------------- */
+
+		.clear {
+			clear: both;
+			display: block;
+			padding: 0 0 10px 0;
+		}
+		.mb0 {
+			margin-bottom: 0 !important;
+		}
+		.pb20 {
+			padding-bottom: 20px !important;
+		}
+
+
+		/*
+		---------------------------
+		form content
+		--------------------------- */
+
+		form.dm_form p,
+		form.dm_form h3 {
+			margin: 0 1% 10px 1%;
+		}
+		
+		div.errors {
+			display: none; /* JS toggle */
+			margin: 0 1% 30px 1%;
+			padding: 5px 10px;
+			background: #dd1100;
+		}
+		div.errors p {
+			color: #fff;
+			margin: 0 0 0.5em 0;
+		}
+		div.errors ul {
+			margin: 0 0 0 1.6em;
+			padding: 0;
+		}
+		div.errors ul li {
+			margin: 0;
+			padding: 0;
+			color: #fff;
+			list-style-type: square;
+		}
+
+		</style>
+
+
+		<!--[if IE 7]>
+		<style type="text/css">
+
+		/* styles for IE 7 */
+
+		form.dm_form label {
+			margin-right: 0.85% !important; /* avoid positioning bugs */
+		}
+		form.dm_form span.wrapper {
+			display: block;
+			width: 100%;
+		}
+		form.dm_form label input.field,
+		form.dm_form label select.field,
+		form.dm_form label textarea.field {
+			position: relative; /* put on top */
+			width: expression(parentNode.offsetWidth - 13); /* - border - padding */
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+		form.dm_form label.mandatory input.field,
+		form.dm_form label.mandatory select.field,
+		form.dm_form label.mandatory textarea.field {
+			width: expression(parentNode.offsetWidth - 18); /* - border - padding */
+		}
+		form.dm_form label.calendar input.field {
+			width: expression(parentNode.offsetWidth - 34); /* - border - padding - icon width */
+		}
+		form.dm_form label input.select {
+			position: relative;
+			left: -2px;
+			top: -2px;
+		}
+		form.dm_form label select.field {
+			width: 100%;
+		}
+		form.dm_form label.wauto {
+			margin-right: 15px !important;
+		}
+
+		</style>
+		<![endif]-->
+
+
+
+		<!--[if lte IE 6]>
+		<style type="text/css">
+
+		/* styles for IE 6 */
+
+		div#container {
+			height: 1%; /* as always: hasLayout for content wrappers should be meaningful */
+		}
+		form.dm_form div.form_wrapper {
+			display: inline-block;
+		}
+		form.dm_form label {
+			display: inline-block !important;
+			width: 1%;
+			height: 1%;
+			margin-right: 0.85% !important; /* avoid positioning bugs */
+		}
+		form.dm_form span.wrapper {
+			display: block !important;
+			width: 100%;
+			overflow: hidden;
+		}
+		form.dm_form label.radiocheck span.wrapper {
+			width: auto;
+		}
+		form.dm_form label input.field,
+		form.dm_form label select.field,
+		form.dm_form label textarea.field {
+			position: relative; /* put on top */
+			width: expression(parentNode.offsetWidth - 13); /* - border - padding */
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+		form.dm_form label.mandatory input.field,
+		form.dm_form label.mandatory select.field,
+		form.dm_form label.mandatory textarea.field {
+			width: expression(parentNode.offsetWidth - 18); /* - border - padding */
+		}
+		form.dm_form label.calendar input.field {
+			width: expression(parentNode.offsetWidth - 34); /* - border - padding - icon width */
+		}
+		form.dm_form label input.select {
+			position: relative;
+			left: -2px;
+			top: -2px;
+		}
+		form.dm_form label select.field {
+			width: 100%;
+		}
+		form.dm_form label.inputselect span.title {
+			display: inline-block !important;
+		}
+		form.dm_form label.radiocheck {
+			width: auto;
+		}
+		form.dm_form label.radiocheck.w100 {
+			width: 98%; /* avoid label being too short */
+		}
+		form.dm_form label.wauto {
+			margin-right: 15px !important;
+		}
+		form.dm_form label.radiocheck span.title {
+			display: inline-block !important;
+			margin-left: 0;
+		}
+
+		</style>
+		<![endif]-->
+
+
+
+
+
+
+
